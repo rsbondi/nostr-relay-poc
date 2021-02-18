@@ -73,5 +73,5 @@ func queryEvents(filter *filter.EventFilter) (events []event.Event, err error) {
 		err = fmt.Errorf("failed to fetch events: %w", err)
 	}
 
-	return
+	return events, err
 }
